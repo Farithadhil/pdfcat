@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { File, FileText, Folder, FilePlus, HelpCircle } from "lucide-react";
+import { File, FileText, Folder, FilePlus, Eye } from "lucide-react";
 
 const IconMatchGame = () => {
   const initialIcons = [
@@ -113,7 +113,7 @@ const IconMatchGame = () => {
                   </div>
                 ) : (
                   <div className="text-gray-400">
-                    <HelpCircle className="w-6 h-6 sm:w-8 sm:h-8" />
+                    <Eye className="w-6 h-6 sm:w-8 sm:h-8" />
                   </div>
                 )}
               </div>
