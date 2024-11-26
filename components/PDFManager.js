@@ -5,6 +5,8 @@ import { AiOutlineFileAdd, AiOutlineCompress, AiOutlineDownload } from "react-ic
 import toast, { Toaster } from "react-hot-toast";
 import PDFCatchGame from "@/components/PDFCatchGame";
 import HowtoUse from "./HowtoUse";
+import Header from "./Header";
+
 
 const PDFManager = () => {
   const [originalFile, setOriginalFile] = useState(null);
@@ -94,17 +96,7 @@ const PDFManager = () => {
   return (
     <div className="min-h-screen bg-purple-500">
       <Toaster />
-      <header className="bg-white shadow-sm">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
-              <a href="/" className="block">
-                <img src="/PDF-CAT-LOGO-long.svg" alt="PDF Compressor Logo" className="w-auto h-12" />
-              </a>
-            </div>
-          </div>
-        </nav>
-      </header>
+      <Header />
       <main className="max-w-7xl mx-auto p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Select PDF */}
@@ -143,6 +135,8 @@ const PDFManager = () => {
       <footer className="w-full p-6 bg-gray-50 text-center text-gray-500">
         <PDFCatchGame />
         <HowtoUse />
+      
+
         2024 PDF Compressor
       </footer>
     </div>

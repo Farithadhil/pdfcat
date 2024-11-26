@@ -49,7 +49,7 @@ export const HowtoUse = () => {
   ];
 
   return (
-    
+
     <div className="bg-gray-50 py-10 px-6 sm:px-12 lg:px-24">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
         How to Use Our PDF Compressor
@@ -68,7 +68,10 @@ export const HowtoUse = () => {
           </div>
         ))}
       </div>
+       
     </div>
+
+
   );
 };
 

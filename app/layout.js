@@ -19,28 +19,18 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+
+// export const viewport = {
+//   themeColor: 'your-color',
+//   viewport: 'your-viewport-settings'
+// }
+
 export const metadata = {
-  title: "PDF Compressor - Reduce PDF File Size Online for Free - PDF CAT",
-  description: "Compress PDF files easily and quickly. Reduce file size by up to 90% while maintaining quality. No installation required – compress your PDFs securely online.",
-  
-  // Meta Tags for Search Engines
-  keywords: "PDF compressor, reduce PDF size, compress PDF online, free PDF compression, online PDF tool, without store online",
+  title: "PDF Watermark Creator - Add Watermarks to PDFs Online - PDF CAT",
+  description: "Easily add watermarks to your PDF files online. Customize text or image watermarks for your documents. No installation required – secure and free.",
+  keywords: "PDF watermark creator, add watermark to PDF, watermark PDF online, free PDF watermark tool, pdf watermark adder, customize watermark PDF, online PDF watermark service",
   author: "PDF CAT",
   robots: "index, follow",
-
- 
-
-  // Favicons and Theme Color
-  icons: {
-    icon: "/favicon.ico", // Replace with the path to your favicon
-    apple: "/apple-touch-icon.png", // Optional for Apple devices
-  },
-  themeColor: "#0078D7", // Replace with your app's theme color
-
-  // Additional Metadata
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1",
-  charset: "utf-8",
-  canonical: "https://yourwebsite.com", // Canonical URL for the app
 };
 
 // app/layout.js
