@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import { Jost } from "next/font/google";
 import "./globals.css";
-
+import Script from 'next/script';
 const jost = Jost({
   subsets: ["latin"],
   variable: "--font-jost",
@@ -37,6 +37,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={jost.variable}>
+      <head>
+        {/* Google Analytics Script */}
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+          `,
+        }}
+      />
+
+       </head>
       <body suppressHydrationWarning={true}>
         {children}
       </body>
